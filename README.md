@@ -1,2 +1,3 @@
-# App em Python
- Projeto para facilitar e automatizar funções de calculo dos funcionarios
+# App de Cálculos e Mensagem Pré-definida em Python utilizando o framework Kivy
+ Esse projeto tem como objetivo criar uma aplicativo para um equipe de funcionários de uma usina sucroalcoleira a agilizar seus trabalhos de avaliações de campo.
+ O aplicativo irá gerar cálculos automaticos atraves dos dados obtidos por eles no campo e gerar um resultado junto com uma mensagem padrão que será enviado em grupo de whatsapp de informações.
