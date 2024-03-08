@@ -1,15 +1,11 @@
 import kivy
-kivy.require('2.3.0') # replace with your current kivy version !
+kivy.require('2.1.0') # replace with your current kivy version !
 
 from kivy.app import App
-from kivy.uix.label import Label
+from kivy.lang import builder
 
+GUI = builder.load.file("tela.kv")
 
-class MyApp(App):
-
+class myapp(App):
     def build(self):
-        return Label(text='App')
-
-
-if __name__ == '__main__':
-    MyApp().run()
+        return GUI
