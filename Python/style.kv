@@ -1,6 +1,14 @@
 GridLayout:
     cols: 1
+    canvas.before:
+        Color:
+            rgba: 1, 0, 0, 1  # Vermelho: R=1, G=0, B=0, Alpha=1 (opacidade)
+        Rectangle:
+            size: self.size
+            pos: self.pos
 
     Button:
         text: "EU TE AMO"
+        color: 0, 0, 0, 1  # Preto: R=0, G=0, B=0, Alpha=1 (opacidade)
+        background_color: 1, 1, 1, 0  # Cor de fundo do botão (transparente)
         on_press: root.button_click()
