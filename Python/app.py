@@ -1,11 +1,16 @@
 import kivy
-kivy.require('2.1.0') # replace with your current kivy version !
+kivy.require('2.1.0')  # substitua pela sua versão atual do kivy!
 
-from kivy.App import App
+from kivy.app import App
 from kivy.lang import Builder
 
-GUI = Builder.load_file("style.kv")
-
-class myapp(App):
+class MyApp(App):
     def build(self):
-        return GUI
+        return Builder.load_file("style.kv")
+
+    def button_click(self):
+        print("EU TE AMO")
+
+
+if __name__ == "__main__":
+    MyApp().run()
