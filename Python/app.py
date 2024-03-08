@@ -1,16 +1,20 @@
 import kivy
-kivy.require('2.1.0')  # substitua pela sua versão atual do kivy!
+kivy.require('2.1.0')
 
 from kivy.app import App
 from kivy.lang import Builder
 
-class MyApp(App):
+GUI = Builder.load_file("tela.kv")
+
+class myapp(App):
     def build(self):
-        return Builder.load_file("style.kv")
+        return GUI
+    
+    def on_start(self):
+        self.root.inicial["calculator"]
+        self.root.inicial["message"]
+        return super().on_start()
 
-    def button_click(self):
-        print("EU TE AMO")
 
 
-if __name__ == "__main__":
-    MyApp().run()
+myapp().run()
