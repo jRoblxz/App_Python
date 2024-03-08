@@ -1,13 +1,11 @@
 import kivy
+kivy.require('2.1.0') # replace with your current kivy version !
+
 from kivy.app import App
 from kivy.lang import Builder
 
-# Load the KV file
-Builder.load_file("tela.kv")
+GUI = Builder.load.file("tela.kv")
 
-class MyApp(App):
+class myapp(App):
     def build(self):
-        return Builder.load_file("tela.kv")
-
-if __name__ == "__main__":
-    MyApp().run()
+        return GUI
